@@ -1,14 +1,11 @@
-//Uses config set global components for the layout
+import Link from 'next/link';
+import Header from '../nestable/Header';
 
-import Header from "../nestable/Header";
 export default function Layout({ config, children }) {
-    //Create at least a header and footer component
-    //Use console.log to determine blok object structure if unsure...
     return (
         <>
-            <Header config = {config}/>
+            <Header config={config} />
             <main>{children}</main>
-            <footer></footer>
         </>
     );
 }
